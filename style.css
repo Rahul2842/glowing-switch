@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background: #424141;
+}
+
+ul {
+    display: flex;
+    column-gap: 15px;
+}
+
+ul li {
+    position: relative;
+    display: block;
+    color: #9b9898;
+    font-size: 35px;
+    height: 60px;
+    width: 60px;
+    background: #181818;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+ul li:before {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    /* background: rgb(255, 163, 25); */
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0.9);
+    transition: 0.4s;
+}
+
+ul li:hover:before {
+    filter: blur(5px);
+    transform: scale(1.2);
+    /* box-shadow: 0 0 15px #a02323; */
+}
+
+ul li:nth-child(1):before {
+    background: #4267B2;
+}
+
+ul li:nth-child(2):before {
+    background: #a0151e;
+}
+
+ul li:nth-child(3):before {
+    background: #020348;
+}
+
+ul li:nth-child(4):before {
+    background: #026821;
+}
+
+ul li:nth-child(5):before {
+    background: #5a6423;
+}
+
+ul li:nth-child(1):hover {
+    color: #edf1f3;
+    box-shadow: 0 0 15px #1DA1F2;
+    text-shadow: 0 0 15px #1DA1F2;
+}
+
+ul li:nth-child(2):hover {
+    color: #edf1f3;
+    box-shadow: 0 0 15px #a0151e;
+    text-shadow: 0 0 15px #a0151e;
+}
+
+ul li:nth-child(3):hover {
+    color: #edf1f3;
+    box-shadow: 0 0 15px #075680;
+    text-shadow: 0 0 15px #075680;
+}
+
+ul li:nth-child(4):hover {
+    color: #edf1f3;
+    box-shadow: 0 0 15px #09ea4c;
+    text-shadow: 0 0 15px #09ea4c;
+}
+
+ul li:nth-child(5):hover {
+    color: #edf1f3;
+    box-shadow: 0 0 15px #dce017;
+    text-shadow: 0 0 15px #dce017;
+}
+
+ul li:nth-child(1):hover:before {
+    box-shadow: 0 0 15px #a02323;
+}
+
+ul li:nth-child(2):hover:before {
+    box-shadow: 0 0 15px #a02323;
+}
+
+ul li:nth-child(3):hover:before {
+    box-shadow: 0 0 15px #a02323;
+}
+
+ul li:nth-child(4):hover:before {
+    box-shadow: 0 0 15px #a02323;
+}
+
+ul li:nth-child(5):hover:before {
+    box-shadow: 0 0 15px #a02323;
+}
